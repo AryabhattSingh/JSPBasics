@@ -31,6 +31,12 @@ is designed to illustrate a specific concept.
    - This example will provide insight into preparing statements and binding values while utilizing `scriptlet tags`.
    - Finally, an `include` JSP directive is used to keep the user on the form page after he/she submits the form.
 
+4. **Error Handling using JSP**:
+   - We will have an error generator file `errorGenerator.jsp`. In this file, we will try to parse a string containing non- numeric characters. This will generate an error.
+   - Notice the use of `errorPage` attribute inside the `page directive`. It defines where the application flow would go should an error happen.
+   - We will generate a response page `errorHandler.jsp` that will print a regret message for the error and display the stack trace.
+   - Notice the use of `isErrorPage` attribute in the `page` directive. It defines whether the current jsp can handle the error generated or not.
+     
 ## Learning Objectives
 
 Through this project, we'll achieve the following learning objectives:
